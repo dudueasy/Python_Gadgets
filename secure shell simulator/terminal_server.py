@@ -11,15 +11,17 @@ import traceback
 # 创建一个socket对象
 server_sk = socket.socket()
 # 创建ip地址和端口
-address = ('127.0.0.1', 8002)
+address = ('127.0.0.1', 8001)
 # 绑定ip地址和端口
 server_sk.bind(address)
 # 开始监听, 参数中设置允许排队的连接数, 超出的连接会被服务器拒绝
 server_sk.listen(3)
 
+
 # 自定义一个 bytes 转换器
 def get_bytes(n):
     return str(n).encode()
+
 
 while True:
     # 等待客户端请求, 接受到请求的时候会获得一个元组. 获取元组的第一个对象作为连接对象
@@ -54,10 +56,13 @@ while True:
 
             # 先发送数据的长度给客户端
 
+            print('数据大小: %i' % len(msg))
             data_size = get_bytes(len(msg))
-            print('数据大小: %s' % str(data_size))
 
             conn.sendall(data_size)
+
+            # 隔断两次发送
+            conn.recv(1024)
             conn.sendall(msg)
             print('---命令输出已返回--->\n')
 
