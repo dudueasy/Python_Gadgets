@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# -*- coding: utf-8 -*-
 import os, re
 
 print('欢迎使用apolo的文件小助手')
