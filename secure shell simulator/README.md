@@ -7,6 +7,7 @@
 # 运行方式:
 * 首先执行 terminal_server.py
 * 然后执行 terminal_client.py
+* 在客户端输入需要执行的命令, 例如 ```ls```
 
 # 其他
 * 请使用 python3 来运行脚本
