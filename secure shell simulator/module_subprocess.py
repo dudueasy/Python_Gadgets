@@ -2,12 +2,8 @@
 __author__ = 'apolo'
 _date_ = '2018/1/23 上午8:28'
 
-import subprocess
-import shlex
 
-command = shlex.split(input('请输入要执行的命令 : '))
-
-# 获得命令输出的两种方法:
+# 通过 subprocess对象获得命令输出的两种方法:
 # 方法1
 
 # 必须定义 stdout = PIPE 才能获得子进程的标准输出.
