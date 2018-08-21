@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 __author__ = 'apolo'
 _date_ = '2018/1/23 上午8:18'
 
-import socket, json, os
+import socket, os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 media_folder = 'media'

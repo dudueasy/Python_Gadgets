@@ -1,6 +1,7 @@
-# -*- coding: utf-8 -*-
-# __author__ = 'apolo'
-# _date_ = '2018/1/23 上午8:19'
+# -*- coding: utf-8 -*- 
+#!/usr/bin/env python3
+__author__ = 'apolo'
+_date_ = '2018/1/23 上午8:19'
 
 import socket, os
 
