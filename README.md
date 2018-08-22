@@ -1,6 +1,6 @@
 # Python_Gadgets
-* A repo for tools made with python3. 
-
+* 这个仓库用于存放一些使用python编写的小工具. 更多的信息, 请进入对应目录查看.
+ 
 # File_assistant
 * 文件小助手, 用于生产文件信息和批量移动特定文件
 
